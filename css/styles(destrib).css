@@ -1,0 +1,610 @@
+﻿@import "./normalize.css"; /* подключаем нормалайз можно использовать screen и print*/
+
+@font-face {
+			font-family: "OpenSansRegular";
+			src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+			src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+			url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+@font-face {
+			font-family: "OpenSansExtraBold";
+			src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+			src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+			url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: OpenSansRegular, sans-serif;
+	padding:0;
+	margin:0;
+    position: relative;
+}
+/*------------------- начало header -------------------*/
+header {
+    position: fixed; /* зафиксировали шапку в верху */
+    z-index:99;
+    background-color: #02918c;
+    width: 100%;
+    height: 60px;
+}
+
+header div {
+    width: 1187px;
+    position: relative;
+    margin: 0 auto;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-family: OpenSansExtraBold, sans-serif;
+    /* border:1px solid red; */
+}
+
+header .logo {
+    display: inline-block;
+    width:300px;
+    margin: 10px 8px;
+    font-weight: 700;
+    font-size: 26px;
+} 
+
+.logo a {
+    text-decoration: none;
+    color: #cfc91d;
+    -moz-transition: color 0.8s 0.1s ease;
+    -o-transition: color 0.8s 0.1s ease;
+    -webkit-transition: color 0.8s 0.1s ease;
+}
+
+.logo a span {
+    color: #ffffff;
+}
+
+.logo a:hover {
+    color: #ffffff;
+
+}
+
+header nav {
+    display: inline-block; 
+    position: absolute;
+    right: -30px;
+    top:3px;
+     /* border: 1px solid red; */
+}
+
+header ul li {
+    display: inline;
+    padding: 22px 23px 22px 24px;
+    font-size: 12px;
+}
+
+header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    background-color: rgba(0,23,23,0.3);
+}
+/*------------------- конец header -------------------*/
+
+/*------------------- начало slider -------------------*/
+main {
+    width: 1280px;
+    height: 790px;
+    border:1px solid green;
+    margin: 0 auto;
+    background: #000000 url('../img/slide-1.jpg') no-repeat left top;
+    background-size: cover;
+}
+
+main div {
+    width:1187px;
+    margin: 0 auto;
+    text-align: center;
+    color:#ffffff;
+}
+
+main p {
+    margin-top: 263px;
+    font-size: 28px;
+    letter-spacing: 1.85px; /* расстояние между буквами*/
+    padding: 0 0 0 5px;
+}
+
+main h1 {
+    margin: -40px 0 10px 0;
+    padding: 6px 0 0 36px;
+    text-transform: uppercase;
+    font-family: OpenSansExtraBold, sans-serif;
+    font-size: 68px;
+    letter-spacing: 22.29px; /* расстояние между буквами*/
+}
+
+main small {
+    display: block;
+    padding: 3px 0 0 8px;
+    margin: -20px 0 0 0;
+    font-size: 18px;
+    letter-spacing: 0.5px; /* расстояние между буквами*/
+}
+
+.main-hr {
+    display: block;
+    margin: 45px auto 46px auto;
+    background: url('../img/matilda.png') no-repeat left top;
+}
+
+.img-hr {
+    width: 110px;
+    height: 34px;
+}
+
+.btn {
+    width:195px;
+    height: 48px;
+    background-color: #cfc91d;
+}
+
+.btn a {
+    display: block; /* переводим строчный в блочный*/
+    height: 100%; /* задаем область кликабельности всю площадь родителя */
+    font-size: 14px;
+    font-family: OpenSansExtraBold, sans-serif;
+    line-height: 50px;
+    letter-spacing: 2.5px; /* расстояние между буквами*/
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    -moz-transition: color 0.2s 0.1s ease;
+    -o-transition: color 0.2s 0.1s ease;
+    -webkit-transition: color 0.2s 0.1s ease;
+    
+}
+
+.btn a:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-shadow:  1px 1px 2px #333333; /* тень для текста css3 */
+    filter:dropshadow(color= 1px 1px 2px #333333); /* тень для текста ie */
+}
+/*------------------- конец slider -------------------*/
+
+/*------------------- начало about -------------------*/
+h2 {
+    color: #02918c;
+    padding: 1px 0 0 2px;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: OpenSansExtraBold, sans-serif;
+    letter-spacing: 1.3px;
+}
+
+h2::after {
+    color: #7e8287;
+    font-size: 13.5px;
+    margin: 18px 0 0 0;
+    display: block;
+    content: "~~~~~~~~ :: ~~~~~~~~";
+}
+
+#about-me {
+    width:1187px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    color:#000000;
+}
+
+#about-me p {
+    width: 900px;
+    margin: -20px auto;
+    font-size: 16px;
+    line-height: 39px;
+}
+
+#about-me strong {
+    font-family: OpenSansExtraBold, sans-serif;
+    font-size: 23px;
+}
+
+.skills {
+    margin-top: 108px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.skills div {
+    display: inline-block;
+    margin-left: 42px;
+    padding: 15px 0;
+    width:20%;
+    text-align: center;
+    font-size: 0;
+}
+
+.skills div span {
+    margin: 2px auto;
+}
+
+/* --- начало спрайта --- */
+
+.sprite {
+    background: url('../img/spritesheet.png') no-repeat;
+    display: block;
+}
+
+.sprite-about-me1 {
+    width: 35px;
+    height: 35px;
+    background-position: -5px -5px;
+}
+
+.sprite-about-me2 {
+    width: 35px;
+    height: 35px;
+    background-position: -50px -5px;
+}
+
+.sprite-about-me3 {
+    width: 35px;
+    height: 35px;
+    background-position: -5px -50px;
+}
+
+.sprite-about-me4 {
+    width: 35px;
+    height: 35px;
+    background-position: -50px -50px;
+}
+
+/* --- конец спрайта ---*/
+
+.skills h3 {
+    font-family: OpenSansExtraBold, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0 3px  0;
+}
+
+.skills small {
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+/* ------------------ конец about ------------------ */
+
+/* ------------------ начало services -------------- */
+#services {
+    position: relative;
+    width:1280px;
+    height:730px;
+    margin: 135px auto 0 auto;
+    text-align: center;
+    color:#000000;
+    border: 1px solid transparent;  /* прозрачный бордер*/
+    background: #ffffff url('../img/services-bg.jpg') no-repeat;
+}
+
+.conteiner {
+    position: relative;
+    width:50%;
+}
+
+.conteiner h2 {
+    text-align: left;
+    margin: 55px 0 0 90px;
+    padding: 2px 1px;
+}
+
+.conteiner h2::after {
+    color: #7e8287;
+    font-size: 13.5px;
+    margin: 25px 0 0 2px;
+    display: block;
+    content: "~~~~~ :: ~~~~~";
+}
+
+.conteiner p {
+    display: block;
+    width: 80%;
+    margin: 12px 0 20px 90px;
+    text-align: left;
+    line-height: 41px;
+}
+
+.info {
+    margin-top: 28px;
+}
+
+.cols {
+    display: inline-block;
+    position: relative;
+    width:275px;
+    padding-left: 50px;
+/*    border: 1px solid blue;*/
+}
+
+.cols span {
+    display: block;
+    margin: 17px 0 0 0;
+
+}
+
+.cols h3 {
+    font-family: OpenSansExtraBold, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.cols p {
+    margin: -1px 0 35px 0;
+    font-size: 11px;
+    letter-spacing: -0.05px;
+    line-height: 21px;
+}
+
+/* ------------------ начало спрайта  --------------- */
+.sprite-services {
+    background: url('../img/spritesheet-sevices.png') no-repeat;
+    display: block;
+}
+
+.sprite-services-icon1 {
+    width: 35px;
+    height: 35px;
+    background-position: -5px -5px;
+}
+
+.sprite-services-icon2 {
+    width: 35px;
+    height: 35px;
+    background-position: -50px -5px;
+}
+
+.sprite-services-icon3 {
+    width: 35px;
+    height: 35px;
+    background-position: -5px -50px;
+}
+
+.sprite-services-icon4 {
+    width: 35px;
+    height: 35px;
+    background-position: -50px -50px;
+}
+/* ------------------ конец спрайта  --------------- */
+/* ------------------ конец services --------------- */
+
+/* ------------------ начало my work --------------- */
+#my-work {
+    position: relative;
+    width:1280px;
+    height:770px;
+    margin: 54px auto 0 auto;
+    text-align: center;
+    color:#000000;
+    border: 1px solid transparent;
+}
+
+#my-work p {
+    width: 685px;
+    margin: -30px auto;
+    font-size: 16px;
+    line-height: 41px;
+}
+
+.old-works {
+    display: block;
+    margin-top: 95px;
+/*    border: 1px solid blue;*/
+    box-sizing: border-box;
+    font-size: 0; /* убираем отступы у детей*/
+}
+
+.old-works article {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    
+    width:25%;
+    height: 238px;
+    border: 1px solid transparent;
+}
+
+.old-works i {
+    display: block;
+    width: 100%;
+    height: 238px;
+}
+
+.work1 {
+    background-image: url('../img/works/photo-1.jpg');
+    background-position: 1% 60%;
+}
+
+.work2 {
+    background-image: url('../img/works/photo-2.jpg');
+    background-position: 20% 60%;
+}
+
+.work3 {
+    background-image: url('../img/works/photo-3.jpg');
+    background-position: 55% 55%;
+}
+
+.work4 {
+    background-image: url('../img/works/photo-4.jpg');
+    background-position: 99% 81%;
+}
+
+.work5 {
+    background-image: url('../img/works/photo-5.jpg');
+    background-position: 0 56%;
+}
+
+.work6 {
+    background-image: url('../img/works/photo-6.jpg');
+    opacity: 1;
+    background-position: 67% 55%;
+}
+
+.work7 {
+    background-image: url('../img/works/photo-7.jpg');
+}
+
+.work8 {
+    background-image: url('../img/works/photo-8.jpg');
+    background-position: 99.8% 57.5%;
+}
+
+.intro {
+    display: none;
+}
+
+.intro h4 {
+    display: block;
+    position: relative;
+    font-family: OpenSansExtraBold, sans-serif;
+    font-size: 16px;
+    margin: 40px;
+}
+
+.intro small {
+    display: block;
+    margin: -20px auto;
+    width: 195px;
+    height: 60px;
+    font-size: 13px;
+}
+
+.old-works article:hover .intro { /* при наведении на артикул показывать скрытый блок*/
+    position: absolute;
+    display: block;
+    padding: 10px;
+    background-color: rgba(2,145,140,0.85);
+    margin: -215px 0 0 25px;
+    width: 270px;
+    height: 195px;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*------------------- конец my work ----------------*/
+
+/* ------------------ начало contact me --------------- */
+#contact-me {
+    position: relative;
+    width:100%;
+    height:850px;
+    margin: 45px auto 0 auto;
+    text-align: center;
+    color:#000000;
+    border: 1px solid transparent;
+}
+
+#contact-me p {
+    display: inline-block;
+    margin-top: -27px;
+    width: 680px;
+    line-height: 41px;
+}
+
+form {
+    margin-top: 40px;
+    height: 565px;
+    border: 1px solid transparent;
+    background-color: #0b0b0b;
+}
+
+label {
+    display: none;
+}
+
+input[type=text]  {
+    position: relative;
+    display: block;
+    width: 30%;
+    max-width: 600px;
+    height: 50px;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7e8287;
+    background-color: #0b0b0b;
+    border: none; /* убираем рамку */
+    border-bottom: 1px solid grey; /* добавляем рамку снизу */
+}
+
+input[type=text]:focus {
+    outline: none; /* при фокусе убираем обводку */
+    border-bottom: 1px solid grey;
+}
+
+input[type=text]:-webkit-autofill {
+    -webkit-box-shadow: inset  0 0 0 0 #0b0b0b, /* Внутренняя тень */
+                        inset 0 0 0 50px #0b0b0b, /* Цвет фона */
+                        0 1px rgba(11, 11, 11, 0) !important; /* Наружная тень */
+    -webkit-text-fill-color: #7e8287 !important;
+}
+
+input[type=button] {
+    display: block;
+    max-width: 200px;
+    margin: 50px auto;
+    border: none;
+    font-family: OpenSansExtraBold, sans-serif;
+}
+
+textarea {
+    border: none; /* убираем рамку */
+    resize: none; /* отключаем изменения размера рамки*/
+    background: #0b0b0b url("data:image/jpg;base64,Li4vaW1nL3RleHRhcmVhLWJncy5qcGc=") repeat-y left top;
+    width: 43%;
+    height: 165px;
+    max-width: 800px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 85px; /* высота строки*/
+    color: #7e8287;
+    overflow:hidden; /* скрыть полоce прокурутки */
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* ------------------ конец contact me --------------- */
+
+/* ------------------ начало footer --------------- */
+footer {
+    position: relative;
+    width:100%;
+    height:75px;
+    text-align: center;
+    background-color: #000000; 
+    color:#7e8287;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    line-height: 72px;
+}
+/* ------------------ конец footer --------------- */
+
+/* ------------------ начало other --------------- */
+
+/* ------------------ конец other --------------- */

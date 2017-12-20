@@ -1,0 +1,267 @@
+﻿@import "./normalize.css"; /* подключаем нормалайз можно использовать screen и print*/
+
+@font-face {
+		font-family: "OpenSansRegular";
+		src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+		src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+		url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansLight";
+		src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+		src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+		url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansItalic";
+		src: url("../fonts/OpenSansItalic/OpenSansItalic.eot");
+		src: url("../fonts/OpenSansItalic/OpenSansItalic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"),
+		url("../fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansBold";
+		src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+		src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+		url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansExtraBold";
+		src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+		src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+		url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansExtraBoldItalic";
+		src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot");
+		src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"),
+		url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansBoldItalic";
+		src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+		src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+		url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "OpenSansRegularItalic";
+		src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+		src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"),
+		url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+            font-family: "OpenSansSemiBold";
+        src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+        src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+            url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+	}
+
+    @font-face {
+        font-family: "OpenSansSemiBoldItalic";
+        src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot");
+        src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"),
+        url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: OpenSansRegular, sans-serif;
+	padding:0;
+	margin:0;
+    position: relative;
+}
+/*------------------- начало header -------------------*/
+#top {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+    background-image: url(../images/football.jpg);
+    width: 99vmax;
+    height: 50vmax;
+
+}
+
+#top:before {
+    background-color:#481bae; /* подложка */
+    opacity:0.7; /* прозрачность */
+}
+
+#top .logo {
+    max-height: 200px;
+    margin: 4.5em 7em 3em 4em;
+}
+
+.logo_icon {
+    width:10vmax;
+}
+
+#top .content {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-grow: 5;
+    color:#FFFFFF;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 10em;
+    width:80vmax;
+}
+
+#top .content .left {
+    align-self:flex-start;
+}
+
+#top .content .right {
+    align-self:flex-end;
+}
+
+.link {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-grow: 3;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.link .appstore,  .link .googleplay{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    background-color: #5e42b0;
+    width:31rem;
+    height: 8rem;
+    border-radius: 10rem;
+    margin:3rem;
+        
+}
+
+#googleplay_logo, #appstore_logo {
+    width:5rem;
+    fill:#ffffff;
+    margin-left:4.1rem;
+}
+
+.labels {
+    margin-left:1.8rem;
+    text-transform: uppercase;
+    line-height: 0.3em;
+    font-size: 1.4em;
+}
+
+/*------------------- конец header -------------------*/
+
+/*------------------- начало athlets -------------------*/
+#athlets {
+    display:flex;
+    flex-direction: column;
+    width: 99vmax;
+    height: 50vmax;
+    padding-left:52%
+}
+
+.white {
+    background-color: rgba(255,255,255,1);
+}
+
+.blue {
+    background-color: rgba(94,66,176,0.06);
+}
+
+.purple {
+    background-color: rgba(94,66,176,1);
+}
+/*------------------- конец athlets -------------------*/
+
+/*------------------- начало player -------------------*/
+#player  {
+    background-color: #333300;
+    display:flex;
+    flex-direction: column;
+    width: 99vmax;
+    height: 50vmax;
+}
+/*------------------- конец player -------------------*/
+
+/*------------------- начало be-active -------------------*/
+#be-active  {
+    background-color: #990000;
+    display:flex;
+    width: 99vmax;
+    height: 38vmax;
+}
+/*------------------- конец be-active -------------------*/
+
+/*------------------- начало find-contact -------------------*/
+#find-contact  {
+    background-color: #009900;
+    display:flex;
+    width: 99vmax;
+    height: 38vmax;
+}
+/*------------------- конец find-contact -------------------*/
+
+/*------------------- начало work-it -------------------*/
+#work-it {
+    background-color: #000077;
+    display:flex;
+    width: 99vmax;
+    height: 38vmax;
+}
+/*------------------- конец work-it -------------------*/
+
+
+/* ------------------ начало footer --------------- */
+footer {
+    background-color: #990000;
+    width: 99vmax;
+    height: 50vmax;
+}
+/* ------------------ конец footer --------------- */
